@@ -26,5 +26,6 @@ os.rmdir("D:\\copytest")
 # 删除非空文件夹
 os.makedirs("D:\\copytest\\copytest1\\copytest2")
 shutil.rmtree("D:\\copytest")
+print('test')
 
 
