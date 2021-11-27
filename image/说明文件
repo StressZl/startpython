@@ -1,0 +1,33 @@
+pygame.display.init()  —  初始化 display 模块
+pygame.display.quit()  —  结束 display 模块
+pygame.display.get_init()  —  如果 display 模块已经初始化，返回 True
+pygame.display.set_mode()  —  初始化一个准备显示的窗口或屏幕
+pygame.display.get_surface()  —  获取当前显示的 Surface 对象
+pygame.display.flip()  —  更新整个待显示的  Surface 对象到屏幕上
+pygame.display.update()  —  更新部分软件界面显示
+pygame.display.get_driver()  —  获取 Pygame 显示后端的名字
+pygame.display.Info()  —  创建有关显示界面的信息对象
+pygame.display.get_wm_info()  —  获取关于当前窗口系统的信息
+pygame.display.list_modes()  —  获取全屏模式下可使用的分辨率
+pygame.display.mode_ok()  —  为显示模式选择最合适的颜色深度
+pygame.display.gl_get_attribute()  —  获取当前显示界面 OpenGL 的属性值
+pygame.display.gl_set_attribute()  —  设置当前显示模式的 OpenGL 属性值
+pygame.display.get_active()  —  当前显示界面显示在屏幕上时返回 True
+pygame.display.iconify()  —  最小化显示的  Surface 对象
+pygame.display.toggle_fullscreen()  —  切换全屏模式和窗口模式
+pygame.display.set_gamma()  —  修改硬件显示的 gama 坡道
+pygame.display.set_gamma_ramp()  —  自定义修改硬件显示的 gama 坡道
+pygame.display.set_icon()  —  修改显示窗口的图标
+pygame.display.set_caption()  —  Set the current window caption
+pygame.display.get_caption()  —  Get the current window caption
+pygame.display.set_palette()  —  Set the display color palette for indexed displays
+
+pygame.draw.rect(screen, 颜色,范围（left,top,width,height）,线宽（0表示填充）)
+矩形
+pygame.draw.circle(screen, 颜色,位置（left,top）,半径,线宽（0表示填充）)
+圆
+pygame.draw.arc(screen,颜色,范围（left,top,width,height）,起始角度,结束角度,线宽)
+弧形
+pygame.draw.ellipse(screen, 颜色,范围（left,top,width,height）,线宽（0表示填充）)
+椭圆
+pygame.draw.aalines(screen, 颜色,False（首尾不相连）, plotPoints（点的列表）, 线宽)
