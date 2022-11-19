@@ -55,18 +55,18 @@ while True:
         if event.type == QUIT:
             pygame.quit()
             sys.exit()
-    # windowSurface.fill(BLACK)
+    windowSurface.fill(BLACK)
     for b in LZ_list:
         dir1 = b['dir'][0]
         dir2 = b['dir'][1]
         if dir1 == '+':
-            b['rect'].left += LZ_speed+random.choice([0, LZ_speed])
+            b['rect'].left += LZ_speed
         if dir1 == '-':
-            b['rect'].left -= LZ_speed+random.choice([0, LZ_speed])
+            b['rect'].left -= LZ_speed
         if dir2 == '+':
-            b['rect'].top += LZ_speed+random.choice([0, LZ_speed])
+            b['rect'].top += LZ_speed
         if dir2 == '-':
-            b['rect'].top -= LZ_speed+random.choice([0, LZ_speed])
+            b['rect'].top -= LZ_speed
         if b['rect'].top < 0:
             dir2 = '+'
         if b['rect'].bottom > WH:
