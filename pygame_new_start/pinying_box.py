@@ -48,6 +48,7 @@ class TextBox:
 
     def draw(self, dest_surf):
         # 创建文字surf
+        self.text = self.text.split(b'\x00'.decode())[0]
         text_surf = self.font.render(self.text, True, (255, 255, 255))
         # 绘制背景色
         dest_surf.blit(self.__surface, (self.x, self.y))
@@ -182,7 +183,6 @@ def main():
         # 绘制文本框
         text_box.draw(winSur)
         pygame.display.flip()
-
 
 if __name__ == '__main__':
     main()
