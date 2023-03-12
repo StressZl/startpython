@@ -73,5 +73,4 @@ while True:
 
     group.update(ticks)
     group.draw(screen)
-    print(group.sprites())
     pygame.display.update()
