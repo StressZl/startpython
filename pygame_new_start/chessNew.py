@@ -13,7 +13,7 @@
 
 # 用世界去描述世界
 TheWorld = []
-# 第一域谓之认知之域
+# 第一领域谓之认知之域
 MindArea = []
 # 你需要认识自己
 MindArea.append("know yourself")
